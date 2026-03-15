@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background: linear-gradient(90deg, #000311 0%, #06070c 50%, #010411 100%);
+  text-decoration: none;
+  list-style: none;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 700px;
+  min-width: 400px;
+  width: 100%;
+  background-color: #0c0c0f;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.082);
+  transition: 0.5s;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.137);
+}
+
+.container header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid #3e414e46;
+  padding: 20px 0px;
+}
+
+.container header h1 {
+  color: #0e36e9;
+}
+
+.container header p {
+  color: #ccc;
+}
+
+.container .input-section {
+  padding: 20px 0px;
+}
+
+.input-section form {
+  display: flex;
+  gap: 15px;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 3px 1px #0e36e9b4;
+  color: #fff;
+  transition: 0.3s;
+  outline: none;
+}
+
+.input-section input:focus {
+  box-shadow: 0px 0px 3px 2px #0e36e9b4;
+}
+
+.input-section button {
+  background-color: #082abe;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-section button:hover {
+  background-color: #0f31c9;
+}
+
+.filters {
+  padding: 5px 0px;
+  display: flex;
+  gap: 15px;
+  padding: 0px 0px 20px 0px;
+}
+
+.filters button {
+  display: flex;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters .selected {
+  background-color: #082abe;
+}
+
+.todos-list {
+  padding: 20px 0px;
+  border-top: 1px solid #3e414e46;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131416;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #082abe;
+  border-radius: 10px;
+}
+
+.todos-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.todos-list ul li {
+  list-style: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  background-color: #131416;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.actions button i {
+  pointer-events: none;
+}
+
+.actions button.delete-btn {
+  color: red;
+}
+
+.actions button.edit-btn {
+  color: rgba(255, 255, 0, 0.623);
+}
+
+.actions button.done-btn {
+  color: rgb(0, 255, 64);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 14px;
+}
