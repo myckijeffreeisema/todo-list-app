@@ -1,6 +1,9 @@
 # SuperTask
 O SuperTask é uma aplicação de gerenciamento de tarefas (To-Do List) desenvolvida com JavaScript Vanilla.
 
+## 📸 Preview
+![Previem do App de gerencimanto de tarefas](todo_list_preview.gif)
+
 ## Tecnologias Utilizadas
 - `HTML5 & CSS3`: Interface responsiva com variáveis CSS e fontes personalizadas.
 
